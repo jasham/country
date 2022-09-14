@@ -14,8 +14,8 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className=" bg-whiteDMLMElem flex flex-row justify-center items-center p-5 dark:bg-veryDarkBlueDMBg shadow-light dark:shadow-dark ">
-      <div className="max-w-6xl flex flex-1 flex-row justify-between items-center">
+    <header className="pl-20 pr-20 pt-5 pb-5 bg-whiteDMLMElem flex flex-row justify-center items-center  dark:bg-veryDarkBlueDMBg shadow-light dark:shadow-dark ">
+      <div className="flex flex-1 flex-row justify-between items-center">
         <h1 className="text-lg font-bold dark:text-whiteDMLMElem">
           Where in the world?
         </h1>
