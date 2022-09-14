@@ -27,11 +27,11 @@ const Main = () => {
               return (
                 <FlagDetails
                   key={index.toString()}
-                  image={data.flag}
-                  population={data.population}
+                  image={data?.flag}
+                  population={data?.population}
                   capital={data?.capital}
-                  region={data.region}
-                  countryName={data.name}
+                  region={data?.region}
+                  countryName={data?.name}
                 />
               );
             })}
