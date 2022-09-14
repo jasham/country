@@ -22,7 +22,7 @@ const Main = () => {
           <div className="mb-14">
             <SearchInput />
           </div>
-          <div className="flex flex-row flex-wrap justify-between items-center gap-4">
+          <div className="flex flex-row flex-wrap justify-between gap-11">
             {countryData.length > 0 &&
               countryData.map(
                 ({ flag, population, capital, region, name }, index) => (
