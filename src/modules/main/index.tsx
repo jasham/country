@@ -25,17 +25,16 @@ const Main = () => {
           <div className="flex flex-row flex-wrap justify-between items-center gap-4">
             {countryData.length > 0 &&
               countryData.map(
-                (data, index) =>
-                  Object.keys(data).length > 0 && (
-                    <FlagDetails
-                      key={index.toString()}
-                      image={data?.flag}
-                      population={data?.population}
-                      capital={data?.capital}
-                      region={data?.region}
-                      countryName={data?.name}
-                    />
-                  )
+                ({ flag, population, capital, region, name }, index) => (
+                  <FlagDetails
+                    key={index.toString()}
+                    image={flag}
+                    population={population}
+                    capital={capital}
+                    region={region}
+                    countryName={name}
+                  />
+                )
               )}
           </div>
         </div>

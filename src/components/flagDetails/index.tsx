@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 type FlagDetails = {
-  image: string;
+  image?: string;
   countryName?: string;
   population?: string;
   region?: string;
