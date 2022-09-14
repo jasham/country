@@ -23,18 +23,20 @@ const Main = () => {
             <SearchInput />
           </div>
           <div className="flex flex-row flex-wrap justify-between items-center gap-4">
-            {countryData.map((data, index) => {
-              return (
-                <FlagDetails
-                  key={index.toString()}
-                  image={data?.flag}
-                  population={data?.population}
-                  capital={data?.capital}
-                  region={data?.region}
-                  countryName={data?.name}
-                />
-              );
-            })}
+            {countryData.length > 0 &&
+              countryData.map(
+                (data, index) =>
+                  Object.keys(data).length > 0 && (
+                    <FlagDetails
+                      key={index.toString()}
+                      image={data?.flag}
+                      population={data?.population}
+                      capital={data?.capital}
+                      region={data?.region}
+                      countryName={data?.name}
+                    />
+                  )
+              )}
           </div>
         </div>
       </main>
