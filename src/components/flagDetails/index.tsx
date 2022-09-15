@@ -27,7 +27,7 @@ const FlagDetails = ({
             className="rounded-t-md aspect-video object-cover w-full"
           />
         </div>
-        <div className="p-5 pb-8 box-border ">
+        <div className="p-5 pb-8 box-border">
           <h6 className="font-bold pb-3 whitespace-nowrap w-full overflow-hidden text-ellipsis">
             {countryName}
           </h6>

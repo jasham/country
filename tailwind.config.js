@@ -15,6 +15,18 @@ module.exports = {
         dark: "0 0px 5px 1px hsl(209, 23%, 20%)",
         dark_hover: "0 0px 10px 3px hsl(209, 23%, 20%)",
       },
+      keyframes: {
+        slowOpen: {
+          "0%": { height: "0px" },
+          "25%": { height: "40px" },
+          "50%": { height: "80px" },
+          "75%": { height: "120px" },
+          "100%": { height: "160px" },
+        },
+      },
+      animation: {
+        slowOpen: "slowOpen .1s linear",
+      },
     },
     colors: {
       ...defaultTheme.colors,

@@ -22,7 +22,7 @@ const Main = () => {
         <div className="flex flex-1 flex-col justify-between ">
           <div className="mb-14 flex flex-row justify-between">
             <SearchInput />
-            {/* <DropDown /> */}
+            <DropDown />
           </div>
           <div className="flex flex-row flex-wrap justify-between gap-11">
             {countryData.length > 0 &&
