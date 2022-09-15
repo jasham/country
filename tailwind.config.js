@@ -12,7 +12,8 @@ module.exports = {
       boxShadow: {
         light: "0 0px 3px 1px hsl(0, 0%, 90%)",
         light_hover: "0 3px 5px 1px hsl(0, 0%, 80%)",
-        dark: "0 0px 2px 2px hsl(209, 23%, 20%)",
+        dark: "0 0px 5px 1px hsl(209, 23%, 20%)",
+        dark_hover: "0 0px 10px 3px hsl(209, 23%, 20%)",
       },
     },
     colors: {

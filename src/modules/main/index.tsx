@@ -3,6 +3,7 @@ import { Layout } from "../../components/layout";
 import { SearchInput } from "../../components/searchInput";
 import axios from "axios";
 import { FlagDetails } from "../../components/flagDetails";
+import { DropDown } from "../../components/dropdown";
 const Main = () => {
   const [countryData, setCountryData] = useState([]);
   useEffect(() => {
@@ -19,8 +20,9 @@ const Main = () => {
     <Layout>
       <main className="flex flex-row items-center pl-20 pr-20 pt-10">
         <div className="flex flex-1 flex-col justify-between ">
-          <div className="mb-14">
+          <div className="mb-14 flex flex-row justify-between">
             <SearchInput />
+            {/* <DropDown /> */}
           </div>
           <div className="flex flex-row flex-wrap justify-between gap-11">
             {countryData.length > 0 &&
