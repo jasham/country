@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
-
 let region = [
   "Filter by region",
   "Select 1",
@@ -11,7 +10,6 @@ let region = [
 ];
 const DropDown = () => {
   const [selectedRegion, setSelectedRegion] = useState(region[0]);
-
   const onSelectRegion = (index: number) => {
     setSelectedRegion(region[index]);
   };

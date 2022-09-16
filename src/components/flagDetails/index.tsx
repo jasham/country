@@ -19,7 +19,7 @@ const FlagDetails = ({
 }: FlagDetails) => {
   return (
     <Link href="https://google.com" className="">
-      <article className="w-[15rem] flex flex-col rounded-md bg-whiteDMLMElem dark:bg-veryDarkBlueDMBg dark:shadow-dark dark:hover:shadow-dark_hover shadow-light hover:shadow-light_hover cursor-pointer mb-3 active:scale-90">
+      <article className="flex-1 flex flex-col rounded-md bg-whiteDMLMElem dark:bg-veryDarkBlueDMBg dark:shadow-dark dark:hover:shadow-dark_hover shadow-light hover:shadow-light_hover cursor-pointer active:scale-90">
         <div className="w-full relative">
           <img
             src={image}
