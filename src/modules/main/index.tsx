@@ -26,11 +26,12 @@ const Main = () => {
         setRegion(Object.keys(objTemp));
         console.log("Calling 45");
       });
+    console.log("Called times");
   }, []);
 
   useEffect(() => {
     setCountryAPIData();
-  }, []);
+  }, [setCountryAPIData]);
 
   const onChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCountryValue(event.target.value);
