@@ -3,29 +3,47 @@ import { Layout } from "../../components/layout";
 import { SearchInput } from "../../components/searchInput";
 import axios from "axios";
 import { FlagDetails } from "../../components/flagDetails";
-import { DropDown } from "../../components/dropdown";
+import DropDown from "../../components/dropdown";
+
 const Main = () => {
   const [countryData, setCountryData] = useState([]);
   const [currentCountryData, setCurrentCountryData] = useState([]);
   const [countryValue, setCountryValue] = useState("");
-  useEffect(() => {
+  const [regions, setRegion] = useState<string[]>([]);
+
+  const setCountryAPIData = useCallback(() => {
     axios
       .get(
         "https://restcountries.com/v2/all?fields=flag,name,population,region,capital"
       )
       .then((res) => {
-        console.log("Here is country data", res.data);
         setCountryData(res.data);
         setCurrentCountryData(res.data);
+        let objTemp: { [key: string]: string } = {};
+        res.data.map(({ region }: { region: string }) => {
+          objTemp[region] = region;
+        });
+        setRegion(Object.keys(objTemp));
+        console.log("Calling 45");
       });
   }, []);
+
+  useEffect(() => {
+    setCountryAPIData();
+  }, []);
+
   const onChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
-    console.log("Here is value data", event.target.value);
     setCountryValue(event.target.value);
     setCurrentCountryData(
       countryData.filter((val: { name: string }) =>
         val.name.includes(event.target.value)
       )
+    );
+  };
+
+  const getSelectedRegion = (region: string) => {
+    setCurrentCountryData(
+      countryData.filter((val: { region: string }) => val.region === region)
     );
   };
   return (
@@ -37,7 +55,7 @@ const Main = () => {
               onChangeInput={onChangeInput}
               countryValue={countryValue}
             />
-            <DropDown />
+            <DropDown regions={regions} getSelectedRegion={getSelectedRegion} />
           </div>
           <div className="grid grid-cols-4 gap-8 ">
             {currentCountryData.length > 0 &&
@@ -60,4 +78,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default React.memo(Main);
