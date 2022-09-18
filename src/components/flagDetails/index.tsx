@@ -28,9 +28,9 @@ const FlagDetails = ({
           />
         </div>
         <div className="p-5 pb-8 box-border">
-          <h1 className="font-bold pb-3 whitespace-nowrap w-full overflow-hidden text-ellipsis">
+          <h2 className="font-bold pb-3 whitespace-nowrap w-full overflow-hidden text-ellipsis">
             {countryName}
-          </h1>
+          </h2>
           <div className="flex flex-row text-sm pb-1">
             <p className="font-semibold">Population: &nbsp; </p>
             <p className="">{population}</p>
