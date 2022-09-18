@@ -6,7 +6,7 @@ type LayoutProps = {
 };
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <main>
+    <main className="pb-11">
       <Header />
       {children}
     </main>

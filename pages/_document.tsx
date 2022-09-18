@@ -11,7 +11,7 @@ const Document = () => {
           rel="stylesheet"
         />
       </Head>
-      <body className="font-nunito bg-veryLightGrayLMB dark:bg-darkBlueDMElem min-h-screen">
+      <body className="font-nunito bg-whiteDMLMElem dark:bg-darkBlueDMElem min-h-screen">
         <Main />
         <NextScript />
       </body>

@@ -14,7 +14,7 @@ const Search = () => {
         stroke="currentColor"
         strokeMiterlimit="10"
         strokeWidth="52"
-        className="stroke-darkGrayLMInput"
+        className="stroke-darkGrayLMInput dark:stroke-whiteDMLMElem"
       />
       <path
         fill="none"
@@ -23,7 +23,7 @@ const Search = () => {
         strokeMiterlimit="10"
         strokeWidth="52"
         d="M338.29 338.29L448 448"
-        className="stroke-darkGrayLMInput"
+        className="stroke-darkGrayLMInput dark:stroke-whiteDMLMElem"
       />
     </svg>
   );
