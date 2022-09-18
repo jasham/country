@@ -64,7 +64,7 @@ const SpecificCountryDetail = () => {
     setCountryAPIData();
   }, [setCountryAPIData]);
   return (
-    <main className="flex flex-col pl-10 pr-10  md:pl-10 md:pr-10 lg:pl-20 lg:pr-20 pt-10 sm:pl-5 sm:pr-5">
+    <main className="flex flex-col pl-10 pr-10  md:pl-10 md:pr-10 lg:pl-20 lg:pr-20 pt-10 sm:pl-5 sm:pr-5 pb-11">
       <nav className="mb-11">
         <Link href="/">
           <span className="flex flex-row gap-2 w-28 item-center  shadow-light dark:bg-darkBlueDMElem dark:shadow-dark dark:hover:shadow-dark_hover pl-4 pr-4 pt-2 pb-2 active:scale-90 cursor-pointer">

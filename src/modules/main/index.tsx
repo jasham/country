@@ -83,7 +83,7 @@ const Main = () => {
   };
   return (
     <Layout>
-      <main className="flex flex-row items-center pl-10 pr-10  md:pl-10 md:pr-10 lg:pl-20 lg:pr-20 pt-10 sm:pl-5 sm:pr-5">
+      <main className="flex flex-row items-center pl-10 pr-10  md:pl-10 md:pr-10 lg:pl-20 lg:pr-20 pt-10 sm:pl-5 sm:pr-5 pb-11">
         <div className="flex flex-1 flex-col justify-between ">
           <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row">
             <SearchInput

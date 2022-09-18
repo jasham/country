@@ -15,10 +15,8 @@ const Layout = ({ children }: LayoutProps) => {
 
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className="pb-11">
-        <Header />
-        {children}
-      </main>
+      <Header />
+      {children}
     </>
   );
 };
