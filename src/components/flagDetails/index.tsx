@@ -32,15 +32,15 @@ const FlagDetails = ({
             {countryName}
           </h6>
           <div className="flex flex-row text-sm pb-1">
-            <p className="font-semibold">Population: </p>
+            <p className="font-semibold">Population: &nbsp; </p>
             <p className="">{population}</p>
           </div>
           <div className="flex flex-row text-sm pb-1">
-            <p className="font-semibold ">Region: </p>
+            <p className="font-semibold ">Region: &nbsp;</p>
             <p className="">{region}</p>
           </div>
           <div className="flex flex-row text-sm pb-1">
-            <p className="font-semibold">Capital: </p>
+            <p className="font-semibold">Capital: &nbsp;</p>
             <p>{capital}</p>
           </div>
         </div>
