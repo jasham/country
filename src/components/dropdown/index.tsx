@@ -27,13 +27,13 @@ const DropDown = ({ regions, getSelectedRegion, sCountry }: DropDownProps) => {
         <span className="self-start">
           {selectedRegion || "Filter by Region"}
         </span>
-        <div className="flex flex-row gap-2">
+        <span className="flex flex-row gap-2">
           <Close
             className="hover:animate-spin duration-[2s] active:scale-75"
             onClick={clearRegion}
           />
           <Caret />
-        </div>
+        </span>
       </button>
       {
         <ul
