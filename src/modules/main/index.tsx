@@ -64,7 +64,9 @@ const Main = () => {
       countryData &&
         setCurrentCountryData(
           countryData.filter((val: { countryName: string }) =>
-            val.countryName.includes(event.target.value)
+            val.countryName
+              .toLowerCase()
+              .includes(event.target.value.toLowerCase())
           )
         );
     },
